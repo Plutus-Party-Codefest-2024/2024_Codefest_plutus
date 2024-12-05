@@ -1,9 +1,13 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Trade.css'
+import { useNavigate } from 'react-router-dom';
+import VerifyModal from '../VerifyModal'
+import { useState } from 'react';
 
 
-const Trade = () => {
+
+function Trade() {
+
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClick = (e) => {
@@ -11,12 +15,29 @@ const Trade = () => {
       navigate('/message'); // Redirect to the Trade component
     };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <div>
+            <VerifyModal isOpen={isModalOpen} onClose={closeModal}>
+                <h2 className="text-lg font-bold">Hello from the Modal!</h2>
+                <p className="mt-2 text-gray-600">
+                    This is a simple modal component in React.
+                </p>
+                <button
+                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
+                    onClick={closeModal}
+                >
+                    Close Modal
+                </button>
+            </VerifyModal>
             <header className="bg-gray-700 text-white p-4">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-bold">
-                        <img src="https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png" alt="Logo" className="h-8 inline-block mr-3" /> Online Trading  
+                        <img src="https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png" alt="Logo" class="h-8 inline-block mr-3" /> Online Trading
                     </div>
                     <nav>
                         <ul className="flex space-x-6">
@@ -70,7 +91,7 @@ const Trade = () => {
                                 <td className="px-4 py-2">Stock A</td>
                                 <td className="px-4 py-2">$100</td>
                                 <td className="px-4 py-2">50</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
+                                <td className="px-4 py-2"><button onClick={openModal} classNameName="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">2</td>
@@ -85,7 +106,8 @@ const Trade = () => {
 
             </div>
         </div>
-    )
-};
+    );
+}
 
-export default Trade;
+
+export default Trade
