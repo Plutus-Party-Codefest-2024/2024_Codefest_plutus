@@ -11,10 +11,10 @@ const Trade = () => (
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a className="hover:text-gray-200">Home</a></li>
-                    <li><a className="hover:text-gray-200">About</a></li>
-                    <li><a className="hover:text-gray-200">Contact</a></li>
-                    <li><a className="hover:text-gray-200">Trade</a></li>
+                    <li><a href="/Login" className="hover:text-gray-200">Home</a></li>
+                    <li><a href="/Login" className="hover:text-gray-200">About</a></li>
+                    <li><a href="/Login" className="hover:text-gray-200">Contact</a></li>
+                    <li><a href="/Login" className="hover:text-gray-200">Trade</a></li>
                 </ul>
             </nav>
         </div>
