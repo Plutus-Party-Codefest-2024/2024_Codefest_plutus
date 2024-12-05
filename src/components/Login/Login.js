@@ -12,7 +12,7 @@ const Login = () => (
         </div>
       </div>
       <div class="item welcome">
-        <h1>Welcome to Invest Safe</h1>
+        <h1 className='pl-4 font-medium'>Welcome to Invest Safe</h1>
       </div>
       <div>Item 3</div>
     </div>
