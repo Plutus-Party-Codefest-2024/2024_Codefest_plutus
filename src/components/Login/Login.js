@@ -19,7 +19,11 @@ const Login = () => (
         <button className='bg-[#0076a0] rounded mt-8 py-4 text-white'>Log In</button>
       </form>
     </div>
-    <div class="right">Right Content</div>
+    <div class="right" className='max-h-full border-l-4 border-solid border-[#ffc107] bg-gray-800 '>
+      <div className='mt-20 text-4xl text-blue-900'>
+        Right Content
+      </div>
+    </div>
   </div>
 );
 
