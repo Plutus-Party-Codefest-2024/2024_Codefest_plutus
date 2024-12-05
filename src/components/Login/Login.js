@@ -23,7 +23,7 @@ const Login = () => {
           <form className='flex flex-col mx-auto max-w-[70%]'>
             <h1 className='pl-4 font-medium text-4xl pb-4'>Welcome to Invest Safe</h1>
             <input type='text' className='border border-gray-400 mb-4 px-5 py-3 rounded' id='User ID' />
-            <input type='text' className='border border-gray-400 px-5 py-3 rounded' id='Password' />
+            <input type='password' className='border border-gray-400 px-5 py-3 rounded' id='Password' />
             <button className='bg-[#0076a0] rounded mt-8 py-4 text-white' onClick={handleLogin}>Log In</button>
           </form>
           <div class="item welcome"></div>
