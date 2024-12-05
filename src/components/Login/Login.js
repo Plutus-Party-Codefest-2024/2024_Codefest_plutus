@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Login.css'
 
 
@@ -8,7 +7,7 @@ const Login = () => (
     <div class="left">
       <div class="item">
         <div class="yellowBox">
-          <img src="https://onlineaccess.edwardjones.com/app/assets/edwardjones-logo-US.png" />
+          <img src="https://onlineaccess.edwardjones.com/app/assets/edwardjones-logo-US.png" alt=""/>
         </div>
       </div>
       <div class="item welcome">
