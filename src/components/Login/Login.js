@@ -6,7 +6,8 @@ import './Login.css'
 const Login = () => {
   const navigate = useNavigate(); // Hook for navigation
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     navigate('/trade'); // Redirect to the Trade component
   };
 
@@ -36,9 +37,5 @@ const Login = () => {
     </div>
   )
 };
-
-Login.propTypes = {};
-
-Login.defaultProps = {};
 
 export default Login;
