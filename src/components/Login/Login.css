@@ -1,0 +1,50 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    color: #191A1A;
+}
+  
+.left {
+    display: flex;
+    flex-direction: column; /* Stacks child divs vertically */
+    gap: 10px; /* Space between items */
+    padding: 10px;
+}
+  
+.right {
+    background-color: lightcoral; /* Optional: For visualization */
+    padding: 10px;
+}
+
+.item {
+    display: flex; /* Enable Flexbox on the item div */
+    justify-content: left; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50px; /* Example height for visualization */
+    padding-left: 10%;
+}
+
+.welcome {
+    margin-top: 100px;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+
+.yellowBox {
+    padding: 10px;
+    width: 180px;
+    margin-top: 100px;
+    background-color: #fbc81a;
+}
+
+.yellowBox img {
+    height: 24px;
+}
+
+
+  
