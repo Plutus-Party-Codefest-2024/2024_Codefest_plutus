@@ -125,6 +125,9 @@ const FAVerify3 = () => {
                             Proceed
                         </button>
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
+                            Edit
+                        </button>
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
                             Cancel
                         </button>
                     </div>
