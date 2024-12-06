@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react'
 import './Order2.css'
 import TonixImage from '../../assets/tonix-chart.jpg';
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
