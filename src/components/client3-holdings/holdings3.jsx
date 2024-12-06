@@ -53,7 +53,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$453.87</td>
                                 <td className='px-4 py-2 text-center'>41</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleClickClient1}>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500' onClick={handleClickClient1}>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -62,7 +62,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$101.37</td>
                                 <td className='px-4 py-2 text-center'>32</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -71,7 +71,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$454.36</td>
                                 <td className='px-4 py-2 text-center'>154</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -80,7 +80,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$385.22</td>
                                 <td className='px-4 py-2 text-center'>273</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
                             <tr className='border-b'>
@@ -88,7 +88,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$214.39</td>
                                 <td className='px-4 py-2 text-center'>413</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -97,7 +97,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$202.16</td>
                                 <td className='px-4 py-2 text-center'>500</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -106,7 +106,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$207.04</td>
                                 <td className='px-4 py-2 text-center'>288</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -115,7 +115,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$165.96</td>
                                 <td className='px-4 py-2 text-center'>197</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
 
@@ -124,7 +124,7 @@ function Holdings3() {
                                 <td className='px-4 py-2 text-center'>$386.72</td>
                                 <td className='px-4 py-2 text-center'>497</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
                         </tbody>
