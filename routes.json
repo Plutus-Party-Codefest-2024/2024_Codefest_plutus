@@ -41,11 +41,6 @@
             "statusCode": 200
         },
         {
-            "route": "/verify1",
-            "serve": "/index.html",
-            "statusCode": 200
-        },
-        {
             "route": "/verify2",
             "serve": "/index.html",
             "statusCode": 200
