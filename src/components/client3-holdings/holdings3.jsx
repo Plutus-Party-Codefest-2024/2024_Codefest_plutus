@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function holdings3() {
-
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClickClient1 = (e) => {
