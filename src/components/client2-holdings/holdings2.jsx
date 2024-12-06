@@ -1,7 +1,6 @@
 import React from 'react';
 import './holdings.css';
 import { useNavigate } from 'react-router-dom';
-import VerifyModal from '../VerifyModal';
 import { useState } from 'react';
 
 

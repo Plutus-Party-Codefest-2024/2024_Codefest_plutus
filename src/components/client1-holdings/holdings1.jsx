@@ -1,7 +1,6 @@
 import React from 'react';
 import './holdings.css';
 import { useNavigate } from 'react-router-dom';
-import VerifyModal from '../VerifyModal';
 import { useState } from 'react';
 
 
@@ -91,7 +90,7 @@ function holdings1() {
                                 <td className="px-4 py-2">Stock A</td>
                                 <td className="px-4 py-2">$100</td>
                                 <td className="px-4 py-2">100</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">2</td>
