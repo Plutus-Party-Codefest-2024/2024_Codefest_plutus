@@ -42,24 +42,6 @@ function holdings2() {
                         </thead>
                         <tbody>
                             <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>TSLA</td>
-                                <td className='px-4 py-2 text-center'>$214.39</td>
-                                <td className='px-4 py-2 text-center'>413</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
-                                </td>
-                            </tr>
-
-                            <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>AMD</td>
-                                <td className='px-4 py-2 text-center'>$202.16</td>
-                                <td className='px-4 py-2 text-center'>500</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
-                                </td>
-                            </tr>
-
-                            <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>AAPL</td>
                                 <td className='px-4 py-2 text-center'>$207.04</td>
                                 <td className='px-4 py-2 text-center'>288</td>
@@ -108,6 +90,23 @@ function holdings2() {
                                 <td className='px-4 py-2 text-center'>NVDA</td>
                                 <td className='px-4 py-2 text-center'>$165.96</td>
                                 <td className='px-4 py-2 text-center'>197</td>
+                                <td className='px-4 py-2 text-center'>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                </td>
+                            </tr>
+                            <tr className='border-b'>
+                                <td className='px-4 py-2 text-center'>TSLA</td>
+                                <td className='px-4 py-2 text-center'>$214.39</td>
+                                <td className='px-4 py-2 text-center'>413</td>
+                                <td className='px-4 py-2 text-center'>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                </td>
+                            </tr>
+
+                            <tr className='border-b'>
+                                <td className='px-4 py-2 text-center'>AMD</td>
+                                <td className='px-4 py-2 text-center'>$202.16</td>
+                                <td className='px-4 py-2 text-center'>500</td>
                                 <td className='px-4 py-2 text-center'>
                                     <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
