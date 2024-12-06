@@ -2,9 +2,9 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
-import Holdings1 from './components/client1-holdings/holdings1';
+import Holdings1 from './components/client1-holdings/Holdings1';
 import Holdings2 from './components/client2-holdings/holdings2';
-import Holdings3 from './components/client3-holdings/holdings3';
+import Holdings3 from './components/client3-holdings/Holdings3';
 import Message from './components/Message/Message';
 import Order1 from './components/client1-order/Order1';
 import Order2 from './components/client2-order/Order2';
@@ -33,6 +33,7 @@ const App = () => (
       <Route path="/inprocess1" element={<Inprocess1 />} />
       <Route path="/inprocess3" element={<Inprocess3 />} />
       <Route path="/faverify3" element={<FAVerify3 />} />
+      <Route path="/salesforce" element={<Homepage />} />
     </Routes>
   </Router>
 );
