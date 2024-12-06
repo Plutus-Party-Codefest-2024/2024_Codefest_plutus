@@ -1,7 +1,7 @@
 import React from 'react';
 import './Trade.css'
 import { useNavigate } from 'react-router-dom';
-import VerifyModal from '../VerifyModal'
+import Modal from '../Modal'
 import { useState } from 'react';
 
 
@@ -22,7 +22,7 @@ function Trade() {
 
     return (
         <div>
-            <VerifyModal isOpen={isModalOpen} onClose={closeModal}>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className="text-lg font-bold">Hello from the Modal!</h2>
                 <p className="mt-2 text-gray-600">
                     This is a simple modal component in React.
@@ -33,7 +33,7 @@ function Trade() {
                 >
                     Close Modal
                 </button>
-            </VerifyModal>
+            </Modal>
             <header className="bg-gray-700 text-white p-4">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-bold">
@@ -76,29 +76,29 @@ function Trade() {
                     </div>
 
                     <table className="min-w-full table-auto border-collapse">
-                        <thead className="bg-zinc-100 text-black">
+                        <thead class="bg-zinc-100 text-black">
                             <tr>
-                                <th className="px-4 py-2">ID</th>
-                                <th className="px-4 py-2">Asset</th>
-                                <th className="px-4 py-2">Price</th>
-                                <th className="px-4 py-2">Quantity</th>
-                                <th className="px-4 py-2">Action</th>
+                                <th class="px-4 py-2">ID</th>
+                                <th class="px-4 py-2">Asset</th>
+                                <th class="px-4 py-2">Price</th>
+                                <th class="px-4 py-2">Quantity</th>
+                                <th class="px-4 py-2">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-b">
-                                <td className="px-4 py-2">1</td>
-                                <td className="px-4 py-2">Stock A</td>
-                                <td className="px-4 py-2">$100</td>
-                                <td className="px-4 py-2">50</td>
-                                <td className="px-4 py-2"><button onClick={openModal} classNameName="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
+                            <tr class="border-b">
+                                <td class="px-4 py-2">1</td>
+                                <td class="px-4 py-2">Stock A</td>
+                                <td class="px-4 py-2">$100</td>
+                                <td class="px-4 py-2">50</td>
+                                <td class="px-4 py-2"><button onClick={openModal} className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
                             </tr>
-                            <tr className="border-b">
-                                <td className="px-4 py-2">2</td>
-                                <td className="px-4 py-2">Stock B</td>
-                                <td className="px-4 py-2">$150</td>
-                                <td className="px-4 py-2">30</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
+                            <tr class="border-b">
+                                <td class="px-4 py-2">2</td>
+                                <td class="px-4 py-2">Stock B</td>
+                                <td class="px-4 py-2">$150</td>
+                                <td class="px-4 py-2">30</td>
+                                <td class="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button></td>
                             </tr>
                         </tbody>
                     </table>
