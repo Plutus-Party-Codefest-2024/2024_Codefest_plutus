@@ -12,6 +12,8 @@ import Order3 from './components/client3-order/Order3';
 import Verify1 from './components/client1-verify/Verify1';
 import Verify2 from './components/client2-verify/Verify2';
 import Verify3 from './components/client3-verify/Verify3';
+import Inprocess1 from './components/client1-inprocess-orders/inprocess1';
+import Inprocess3 from './components/client3-inprocess-orders/inprocess3';
 
 const App = () => (
   <Router>
@@ -27,6 +29,8 @@ const App = () => (
       <Route path="/verify1" element={<Verify1 />} />
       <Route path="/verify2" element={<Verify2 />} />
       <Route path="/verify3" element={<Verify3 />} />
+      <Route path="/inprocess1" element={<Inprocess1 />} />
+      <Route path="/inprocess3" element={<Inprocess3 />} />
     </Routes>
   </Router>
 );

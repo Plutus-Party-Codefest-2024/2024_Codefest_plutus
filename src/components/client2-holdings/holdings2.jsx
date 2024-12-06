@@ -12,7 +12,7 @@ function Holdings2() {
             <header className='bg-gray-700 text-white p-4'>
                 <div className='flex items-center justify-between'>
                     <div className='text-xl font-bold'>
-                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Chad Holdings
+                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client John Holdings
                     </div>
                     <nav>
                         <ul className='flex space-x-6'>

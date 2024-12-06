@@ -19,7 +19,7 @@ function Holdings3() {
             <header className='bg-gray-700 text-white p-4'>
                 <div className='flex items-center justify-between'>
                     <div className='text-xl font-bold'>
-                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Jonny Holdings
+                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Brad Holdings
                     </div>
                     <nav>
                         <ul className='flex space-x-6'>
@@ -50,7 +50,7 @@ function Holdings3() {
                         <tbody>
                             <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>NVDA</td>
-                                <td className='px-4 py-2 text-center'>$453.87</td>
+                                <td className='px-4 py-2 text-center'>$145.06</td>
                                 <td className='px-4 py-2 text-center'>41</td>
                                 <td className='px-4 py-2 text-center'>
                                     <button className='text-white px-4 py-2 rounded bg-green-500' onClick={handleClickClient1}>Buy</button>  <button className='bg-red-500 text-white px-4 py-2 rounded'>Sell</button>
