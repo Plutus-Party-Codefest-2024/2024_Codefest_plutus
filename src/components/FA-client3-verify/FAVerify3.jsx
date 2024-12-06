@@ -31,11 +31,11 @@ const FAVerify3 = () => {
     useEffect(() => {
         // Timers for showing rules
         const timers = [
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule1: true })), 500), // Show rule1 after 0.5 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule2: true })), 1500), // Show rule2 after 1.5 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule3: true })), 3000), // Show rule3 after 3 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule4: true })), 4000), // Show rule3 after 4 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule5: true })), 6000), // Show rule3 after 6 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule1: true })), 0), // Show rule1 after 0.5 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule2: true })), 0), // Show rule2 after 1.5 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule3: true })), 0), // Show rule3 after 3 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule4: true })), 0), // Show rule3 after 4 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule5: true })), 0), // Show rule3 after 6 seconds
         ];
 
         // Cleanup timers on component unmount
@@ -44,8 +44,19 @@ const FAVerify3 = () => {
 
     const isLoading = Object.values(visibleRules).includes(false);
 
+    const data = [
+        { field: 'Account', value: '472-14893-1-3' },
+        { field: 'Action Type', value: 'Buy' },
+        { field: 'Symbol', value: 'NVDA' },
+        { field: 'Shares', value: '1,000' },
+        { field: 'Type', value: 'Market' },
+        { field: 'Current Bid/Ask', value: '144.08 / 145.10' },
+        { field: 'Estimate', value: '$145,100' },
+    ];
+
+
     return (
-        <div>
+        <div className="min-h-screen bg-gray-100 flex flex-col items-center">
             <header className="flexbg-white flex items-center p-4 w-full">
                 <div className="flex-shrink-0">
                     <div className="bg-yellow-500 p-4">
@@ -155,7 +166,19 @@ const FAVerify3 = () => {
                 <br />
                 <br />
             </div>
-            <div class="bg-gray-100 flex items-center justify-center">
+            <div className="bg-gray-100 flex flex-col items-center space-y-6 mt-8 w-full max-w-4xl">
+                <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+                    <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Order Details</h2>
+                    <div className="grid grid-cols-2 gap-4">
+                        {data.map((item, index) => (
+                            <React.Fragment key={index}>
+                                <div className="font-semibold text-gray-700">{item.field}:</div>
+                                <div className="text-gray-900">{item.value}</div>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                </div>
+
                 <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
                     <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">
                         Validation Rules Checker
