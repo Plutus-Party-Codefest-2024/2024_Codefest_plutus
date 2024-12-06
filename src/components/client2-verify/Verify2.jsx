@@ -127,7 +127,7 @@ const Verify2 = () => {
                             Cancel
                         </button>
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick}>
-                            Hold
+                            Contact FA
                         </button>
                     </div>
                 </div>
