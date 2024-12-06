@@ -167,7 +167,7 @@ const FAVerify3 = () => {
                 <br />
                 <br />
                 
-                <div className="flex flex-row items-start justi space-x-6 mt-8 w-full max-w-4xl">
+                <div className="flex flex-row items-center justify-center space-x-6 mt-8 w-full max-w-4xl mx-auto">
                     <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
                         <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Order Details</h2>
                         <div className="grid grid-cols-2 gap-4">
@@ -259,6 +259,7 @@ const FAVerify3 = () => {
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
