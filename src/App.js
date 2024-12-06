@@ -2,9 +2,9 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
-import Holdings1 from './components/client1-holdings/Holdings1';
+import Holdings1 from './components/client1-holdings/holdings1';
 import Holdings2 from './components/client2-holdings/holdings2';
-import Holdings3 from './components/client3-holdings/Holdings3';
+import Holdings3 from './components/client3-holdings/holdings3';
 import Message from './components/Message/Message';
 import Order1 from './components/client1-order/Order1';
 import Order2 from './components/client2-order/Order2';
@@ -15,6 +15,7 @@ import Verify3 from './components/client3-verify/Verify3';
 import Inprocess1 from './components/client1-inprocess-orders/inprocess1';
 import Inprocess3 from './components/client3-inprocess-orders/inprocess3';
 import FAVerify3 from './components/FA-client3-verify/FAVerify3';
+import Homepage from './components/FA-homepage/Homepage';
 
 const App = () => (
   <Router>

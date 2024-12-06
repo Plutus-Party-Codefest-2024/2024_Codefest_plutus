@@ -30,11 +30,11 @@ const Verify3 = () => {
     useEffect(() => {
         // Timers for showing rules
         const timers = [
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule1: true })), 500), // Show rule1 after 0.5 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule2: true })), 1500), // Show rule2 after 1.5 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule3: true })), 3000), // Show rule3 after 3 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule4: true })), 4000), // Show rule3 after 4 seconds
-            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule5: true })), 6000), // Show rule3 after 6 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule1: true })), 50), // Show rule1 after 0.5 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule2: true })), 150), // Show rule2 after 1.5 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule3: true })), 300), // Show rule3 after 3 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule4: true })), 400), // Show rule3 after 4 seconds
+            setTimeout(() => setVisibleRules((prev) => ({ ...prev, rule5: true })), 600), // Show rule3 after 6 seconds
         ];
 
         // Cleanup timers on component unmount

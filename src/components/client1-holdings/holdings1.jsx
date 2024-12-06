@@ -5,8 +5,6 @@ import './holdings.css';
 
 const Holdings1 = () => {
 
-function Holdings1() {
-
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClickClient1 = (e) => {
