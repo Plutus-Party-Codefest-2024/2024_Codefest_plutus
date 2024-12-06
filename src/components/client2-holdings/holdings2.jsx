@@ -1,11 +1,18 @@
 import React from 'react';
 import './holdings.css';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import { useState } from 'react';
 
 
 
 function Holdings2() {
+
+    const navigate = useNavigate(); // Hook for navigation
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        navigate('/order2'); // Redirect to the Verify component
+    };
 
     return (
         <div>
@@ -17,7 +24,7 @@ function Holdings2() {
                     <nav>
                         <ul className='flex space-x-6'>
                             <li><a href='/' className='hover:text-gray-200'>Home Page</a></li>
-                            <li><a href='/order2' className='hover:text-gray-200'>Trade</a></li>
+                            <li><div onClick={handleClick} className='hover:text-gray-200 hover:cursor-pointer'>Trade</div></li>
                         </ul>
                     </nav>
                 </div>
