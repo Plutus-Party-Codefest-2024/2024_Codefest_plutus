@@ -1,6 +1,6 @@
 import './Homepage.css'
 import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FaPlusSquare, FaBell, FaCog, FaPhoneAlt, FaClipboardList, FaEnvelope, FaBullhorn, FaRegStar, FaChartLine, FaGlobe } from 'react-icons/fa';
 import { FaMountainCity } from 'react-icons/fa6';
 import { MdOutlineQuestionMark } from "react-icons/md";
@@ -14,12 +14,12 @@ import Modal from '../Modal'
 
 
 const Homepage = () => {
-    // const navigate = useNavigate(); // Hook for navigation
+    const navigate = useNavigate(); // Hook for navigation
 
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     navigate('/holdings1');
-    // };
+    const handleClick = (e) => {
+        e.preventDefault();
+        navigate('/faverify3');
+    };
 
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +31,7 @@ const Homepage = () => {
         // Set a timer to open the modal after 10 seconds
         const timer = setTimeout(() => {
             openModal();
-        }, 10000); // 10,000ms = 10 seconds
+        }, 6000); // 10,000ms = 10 seconds
 
         // Clean up the timer when the component unmounts
         return () => clearTimeout(timer);
@@ -126,10 +126,16 @@ const Homepage = () => {
                     Your client Brad has a pending order that requires your attention!
                 </p>
                 <button
-                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
+                    className="ml-6 mt-4 bg-red-500 text-white px-4 py-2 rounded mx-4"
                     onClick={closeModal}
                 >
                     Close Modal
+                </button>
+                <button
+                    className="ml-8 mt-4 bg-red-500 text-white px-4 py-2 rounded"
+                    onClick={handleClick}
+                >
+                    View
                 </button>
             </Modal>
             <header className="bg-white flex items-center p-4 w-full">
