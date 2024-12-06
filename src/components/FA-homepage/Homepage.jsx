@@ -20,6 +20,22 @@ const Homepage = () => {
     //     e.preventDefault();
     //     navigate('/holdings1');
     // };
+
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+    useEffect(() => {
+        // Set a timer to open the modal after 10 seconds
+        const timer = setTimeout(() => {
+            openModal();
+        }, 10000); // 10,000ms = 10 seconds
+
+        // Clean up the timer when the component unmounts
+        return () => clearTimeout(timer);
+    }, []);
     const emails = [
         {
             title: "Sell Notification from Jenny",
