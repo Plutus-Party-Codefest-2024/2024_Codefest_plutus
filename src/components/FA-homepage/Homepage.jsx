@@ -1,27 +1,46 @@
 import './Homepage.css'
-import React, { useState, useEffect }  from 'react';
-import { useNavigate } from 'react-router-dom';
-import { FaPlusSquare, FaBell, FaCog, FaPhoneAlt, FaClipboardList, FaEnvelope, FaBullhorn, FaRegStar, FaChartLine, FaGlobe} from 'react-icons/fa';
+// import React, { useState, useEffect }  from 'react';
+import React, { useState }  from 'react';
+// import { useNavigate } from 'react-router-dom';
+import { FaPlusSquare, FaBell, FaCog, FaPhoneAlt, FaClipboardList, FaEnvelope, FaBullhorn, FaRegStar, FaChartLine, FaGlobe } from 'react-icons/fa';
 import { FaMountainCity } from 'react-icons/fa6';
 import { MdOutlineQuestionMark } from "react-icons/md";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoMdPeople, IoIosPaper } from "react-icons/io";
 import { ImStack } from "react-icons/im";
 import { GrDocument } from "react-icons/gr";
+import Modal from '../Modal'
 
 
 
 
 const Homepage = () => {
-    const navigate = useNavigate(); // Hook for navigation
+    // const navigate = useNavigate(); // Hook for navigation
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        navigate('/holdings1');
-    };
+    // const handleClick = (e) => {
+    //     e.preventDefault();
+    //     navigate('/holdings1');
+    // };
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     return (
         <div>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <h2 className="text-lg font-bold">Hello from the Modal!</h2>
+                <p className="mt-2 text-gray-600">
+                    This is a simple modal component in React.
+                </p>
+                <button
+                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
+                    onClick={closeModal}
+                >
+                    Close Modal
+                </button>
+            </Modal>
             <header className="bg-white flex items-center p-4 w-full">
                 <div className="flex-shrink-0">
                     <div className="bg-yellow-500 p-4">
@@ -30,12 +49,12 @@ const Homepage = () => {
                 </div>
 
                 <div className="flex-grow flex justify-center">
-                    <form className="max-w-md mx-auto">   
+                    <form className="max-w-md mx-auto">
                         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
                             </div>
                             <input type="search" id="default-search" class="block w-[420px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
@@ -48,7 +67,7 @@ const Homepage = () => {
                     <FaMountainCity className="text-gray-500" size={40} />
                     <MdOutlineQuestionMark className="text-gray-500" size={40} />
                     <FaBell className="text-gray-500" size={40} />
-                    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/high-velocity-sales/get-to-know-the-console-and-cadences/images/a1d4a8972e35806d435b7a05edba7910_kix.maunvh87ew35.png" width="40px" />
+                    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/high-velocity-sales/get-to-know-the-console-and-cadences/images/a1d4a8972e35806d435b7a05edba7910_kix.maunvh87ew35.png" width="40px" alt='Logo' />
                 </div>
             </header>
             <nav className="border-t border-gray-300 p-4 flex items-center space-x-4">
@@ -58,7 +77,7 @@ const Homepage = () => {
                 <select></select>
             </nav>
             <div id="main">
-                <br/>
+                <br />
                 <nav className="m-[20px] flex items-center bg-white">
                     <div className="bg-gray-200 w-[50px] h-[100px] p-2 flex items-start justify-center mr-4">
                         <span className="border border-black bg-white flex items-center justify-center">
@@ -128,8 +147,8 @@ const Homepage = () => {
                         </div>
                     </div>
                 </nav>
-                <br/>
-                <br/>
+                <br />
+                <br />
             </div>
         </div>
     )
