@@ -38,23 +38,58 @@ const Verify2 = () => {
 
     const isLoading = Object.values(visibleRules).includes(false);
 
+    const data = [
+        { field: 'Action Type', value: 'Sell' },
+        { field: 'Symbol', value: 'TSLA' },
+        { field: 'Shares', value: '50' },
+        { field: 'Type', value: 'Market' },
+        { field: 'Current Bid/Ask', value: '368.54 / 369.83' },
+        { field: 'Estimate', value: '$18,427.00' },
+    ];
+
     return (
-        <div>
-            <header className="bg-gray-700 text-white p-4">
+        <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+            <header className="bg-gray-700 text-white p-4 w-full">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-bold">
-                        <img src="https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png" alt="Logo" class="h-8 inline-block mr-3" /> Online Access - Client John Holdings
+                        <img
+                            src="https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png"
+                            alt="Logo"
+                            className="h-8 inline-block mr-3"
+                        />
+                        Online Access - Client Jenny Holdings
                     </div>
                     <nav>
                         <ul className="flex space-x-6">
-                            <li><a href="/" className="hover:text-gray-200">Home Page</a></li>
-                            <li><a href="/order2" className="hover:text-gray-200">Trade</a></li>
+                            <li>
+                                <a href="/" className="hover:text-gray-200">
+                                    Home Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/order1" className="hover:text-gray-200">
+                                    Trade
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <div class="bg-gray-100 flex items-center justify-center min-h-screen">
-                <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+
+            <div className="bg-gray-100 flex flex-col items-center space-y-6 mt-8 w-full max-w-4xl">
+                <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+                    <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Order Details</h2>
+                    <div className="grid grid-cols-2 gap-4">
+                        {data.map((item, index) => (
+                            <React.Fragment key={index}>
+                                <div className="font-semibold text-gray-700">{item.field}:</div>
+                                <div className="text-gray-900">{item.value}</div>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
                     <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">
                         Validation Rules Checker
                     </h1>
