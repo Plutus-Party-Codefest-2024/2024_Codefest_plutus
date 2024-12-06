@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import './verify1.css';
 import { useNavigate } from 'react-router-dom';
 // import { useState } from 'react';
@@ -8,9 +8,14 @@ import { useNavigate } from 'react-router-dom';
 const Verify1 = () => {
     const navigate = useNavigate(); // Hook for navigation
 
-    const handleClick = (e) => {
+    const handleClick1 = (e) => {
         e.preventDefault();
         navigate('/holdings1');
+    };
+
+    const handleClick2 = (e) => {
+        e.preventDefault();
+        navigate('/inprocess1');
     };
 
     // State to track which rules are visible
@@ -48,7 +53,7 @@ const Verify1 = () => {
                     </div>
                     <nav>
                         <ul className="flex space-x-6">
-                            <li><a href="/landing" className="hover:text-gray-200">Home Page</a></li>
+                            <li><a href="/" className="hover:text-gray-200">Home Page</a></li>
                             <li><a href="/order1" className="hover:text-gray-200">Trade</a></li>
                         </ul>
                     </nav>
@@ -59,7 +64,7 @@ const Verify1 = () => {
                     <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">
                         Validation Rules Checker
                     </h1>
-                    
+
                     <div className="space-y-3">
                         {visibleRules.rule1 && (
                             <div id="rule1" className="flex items-center justify-between border-b pb-2">
@@ -92,43 +97,43 @@ const Verify1 = () => {
                             </div>
                         )}
                     </div>
-                    
+
                     {isLoading && (
-                    <div class="mt-6 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
-                            <circle
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                stroke="lightblue"
-                                stroke-width="10"
-                                fill="none"
-                                stroke-dasharray="283"
-                                stroke-dashoffset="75"
-                                stroke-linecap="round"
-                            >
-                                <animateTransform
-                                attributeName="transform"
-                                type="rotate"
-                                from="0 50 50"
-                                to="360 50 50"
-                                dur="1s"
-                                repeatCount="indefinite"
-                                />
-                            </circle>
-                        </svg>
-                    </div>
+                        <div class="mt-6 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+                                <circle
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    stroke="lightblue"
+                                    stroke-width="10"
+                                    fill="none"
+                                    stroke-dasharray="283"
+                                    stroke-dashoffset="75"
+                                    stroke-linecap="round"
+                                >
+                                    <animateTransform
+                                        attributeName="transform"
+                                        type="rotate"
+                                        from="0 50 50"
+                                        to="360 50 50"
+                                        dur="1s"
+                                        repeatCount="indefinite"
+                                    />
+                                </circle>
+                            </svg>
+                        </div>
                     )}
-            
+
                     <div class="mt-6 flex justify-between space-x-4">
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick}>
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick2}>
                             Proceed
                         </button>
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick}>
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
                             Cancel
                         </button>
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick}>
-                            Hold
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
+                            Contact FA
                         </button>
                     </div>
                 </div>

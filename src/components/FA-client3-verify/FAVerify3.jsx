@@ -4,17 +4,12 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Verify3 = () => {
+const FAVerify3 = () => {
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClick1 = (e) => {
         e.preventDefault();
-        navigate('/holdings3');
-    };
-
-    const handleClick2 = (e) => {
-        e.preventDefault();
-        navigate('/inprocess3');
+        navigate('/');
     };
 
     // State to track which rules are visible
@@ -126,14 +121,14 @@ const Verify3 = () => {
 
                     <div class="mt-6 flex justify-between space-x-4">
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3 
-                                        disabled:bg-gray-400 disabled:text-gray-700 disabled:cursor-not-allowed" onClick={handleClick1} disabled>
+                                        disabled:bg-gray-400 disabled:text-gray-700 disabled:cursor-not-allowed" onClick={handleClick1}>
                             Proceed
                         </button>
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
-                            Cancel
+                            Edit
                         </button>
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick2}>
-                            Contact FA
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
+                            Cancel
                         </button>
                     </div>
                 </div>
@@ -142,4 +137,4 @@ const Verify3 = () => {
     )
 };
 
-export default Verify3
+export default FAVerify3

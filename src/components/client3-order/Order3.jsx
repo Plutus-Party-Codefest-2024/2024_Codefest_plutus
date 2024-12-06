@@ -1,18 +1,18 @@
 import React from 'react';
-import './Order1.css'
-import TeslaImage from '../../assets/tesla-chart.jpg';
+import './Order3.css'
+import NvidiaImage from '../../assets/nvidia-chart.jpg';
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { useNavigate } from 'react-router-dom';
 
 
 
-function Order1() {
+function Order3() {
 
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClick = (e) => {
       e.preventDefault();
-      navigate('/verify1'); // Redirect to the Verify component
+      navigate('/verify3'); // Redirect to the Verify component
     };
 
     return (
@@ -20,12 +20,12 @@ function Order1() {
             <header className='bg-gray-700 text-white p-4'>
                 <div className='flex items-center justify-between'>
                     <div className='text-xl font-bold'>
-                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Jenny Holdings
+                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Brad Holdings
                     </div>
                     <nav>
                         <ul className='flex space-x-6'>
                             <li><a href='/' className='hover:text-gray-200'>Home Page</a></li>
-                            <li><a href='/order1' className='hover:text-gray-200'>Trade</a></li>
+                            <li><a href='/order3' className='hover:text-gray-200'>Trade</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,7 +43,7 @@ function Order1() {
                             Search
                         </button>
                     </div>
-                    <img src={TeslaImage} alt="Tesla Chart" />
+                    <img src={NvidiaImage} alt="Tesla Chart" />
                     <table className="min-w-full table-auto border-collapse">
 
                         <tbody>
@@ -59,8 +59,8 @@ function Order1() {
                                             autoComplete="action-name"
                                             className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         >
-                                            <option>Sell</option>
                                             <option>Buy</option>
+                                            <option>Sell</option>
                                         </select>
                                         <ChevronDownIcon
                                             aria-hidden="true"
@@ -94,7 +94,7 @@ function Order1() {
                                             className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         >
                                             <option>Market</option>
-                                            <option>Limit</option>
+                                            <option>Sell</option>
                                         </select>
                                         <ChevronDownIcon
                                             aria-hidden="true"
@@ -111,6 +111,7 @@ function Order1() {
                                             id="duration"
                                             name="duration"
                                             type="text"
+                                            placeholder='Day'
                                             className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         />
                                     </div>
@@ -143,4 +144,4 @@ function Order1() {
 }
 
 
-export default Order1
+export default Order3
