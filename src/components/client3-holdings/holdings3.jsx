@@ -1,11 +1,18 @@
 import React from 'react';
 import './holdings.css';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import { useState } from 'react';
 
 
 
 function holdings3() {
+
+    const navigate = useNavigate(); // Hook for navigation
+
+    const handleClickClient1 = (e) => {
+        e.preventDefault();
+        navigate('/order3');
+    };
 
     return (
         <div>
@@ -16,7 +23,7 @@ function holdings3() {
                     </div>
                     <nav>
                         <ul className='flex space-x-6'>
-                            <li><a href='/landing' className='hover:text-gray-200'>Home Page</a></li>
+                            <li><a href='/' className='hover:text-gray-200'>Home Page</a></li>
                             <li><a href='/order3' className='hover:text-gray-200'>Trade</a></li>
                         </ul>
                     </nav>
@@ -46,7 +53,7 @@ function holdings3() {
                                 <td className='px-4 py-2 text-center'>$214.39</td>
                                 <td className='px-4 py-2 text-center'>413</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleClickClient1}>Sell</button>
                                 </td>
                             </tr>
 
