@@ -1,7 +1,77 @@
 {
     "routes": [
         {
+            "route": "/message",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/holdings1",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/holdings2",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/holdings3",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/order1",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/order2",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/order3",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/verify1",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/verify1",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/verify2",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/verify3",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/inprocess1",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/inprocess3",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
             "route": "/faverify3",
+            "serve": "/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/salesforce",
             "serve": "/index.html",
             "statusCode": 200
         },
