@@ -22,7 +22,7 @@ const Login = () => {
 
   const handleClickFa = (e) => {
     e.preventDefault();
-    navigate('/holdings3');
+    navigate('/salesforce');
   };
   return (
     <div className='mx-auto'>
