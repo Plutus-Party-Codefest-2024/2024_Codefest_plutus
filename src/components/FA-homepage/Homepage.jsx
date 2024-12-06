@@ -39,7 +39,7 @@ const Homepage = () => {
     return (
         <div>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-                <h2 className="text-lg font-bold">Hello from the Modal!</h2>
+                <h2 className="text-lg font-bold">InvestSafe Alert!</h2>
                 <p className="mt-2 text-gray-600">
                     Your client Brad has a pending order that requires your attention!
                 </p>
