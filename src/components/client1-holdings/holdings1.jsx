@@ -1,12 +1,11 @@
 import React from 'react';
-import './holdings.css';
 import { useNavigate } from 'react-router-dom';
-// import { useState } from 'react';
+import './holdings.css';
 
 
+const holdings1 = () => {
 
-function holdings1() {
-
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
 
     const handleClickClient1 = (e) => {
