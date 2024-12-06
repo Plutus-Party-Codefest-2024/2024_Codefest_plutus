@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function Order1() {
+function Order3() {
 
     const navigate = useNavigate(); // Hook for navigation
 
@@ -144,4 +144,4 @@ function Order1() {
 }
 
 
-export default Order1
+export default Order3
