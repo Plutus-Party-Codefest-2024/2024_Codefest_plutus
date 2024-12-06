@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function Order1() {
+function Order2() {
 
     const [show, setShow] = useState(false); // Initialize 'show' variable
 
@@ -151,4 +151,4 @@ function Order1() {
 }
 
 
-export default Order1
+export default Order2
