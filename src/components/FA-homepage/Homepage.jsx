@@ -1,6 +1,5 @@
 import './Homepage.css'
-// import React, { useState, useEffect }  from 'react';
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { FaPlusSquare, FaBell, FaCog, FaPhoneAlt, FaClipboardList, FaEnvelope, FaBullhorn, FaRegStar, FaChartLine, FaGlobe } from 'react-icons/fa';
 import { FaMountainCity } from 'react-icons/fa6';
@@ -27,12 +26,22 @@ const Homepage = () => {
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
+    useEffect(() => {
+        // Set a timer to open the modal after 10 seconds
+        const timer = setTimeout(() => {
+          openModal();
+        }, 10000); // 10,000ms = 10 seconds
+    
+        // Clean up the timer when the component unmounts
+        return () => clearTimeout(timer);
+      }, []);
+
     return (
         <div>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className="text-lg font-bold">Hello from the Modal!</h2>
                 <p className="mt-2 text-gray-600">
-                    This is a simple modal component in React.
+                    Your client Brad has a pending order that requires your attention!
                 </p>
                 <button
                     className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
