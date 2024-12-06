@@ -1,17 +1,17 @@
 import React from 'react';
 import './Order1.css'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 
 function Order1() {
 
-    const navigate = useNavigate(); // Hook for navigation
+    // const navigate = useNavigate(); // Hook for navigation
 
-    // const handleClick = (e) => {
-    //   e.preventDefault();
-    //   navigate('/message'); // Redirect to the Verification component
-    // };
+    const handleClick = (e) => {
+      e.preventDefault();
+      navigate('/message'); // Redirect to the Trade component
+    };
 
     return (
         <div>

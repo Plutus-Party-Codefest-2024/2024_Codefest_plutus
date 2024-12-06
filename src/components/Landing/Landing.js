@@ -25,12 +25,11 @@ const Login = () => {
     navigate('/holdings3');
   };
   return (
-      <div className='mx-auto'>
-        <div className='max-w-screen-md mx-auto'>
-          <div class="item">
-            <div class="yellowBox">
-              <img src="https://onlineaccess.edwardjones.com/app/assets/edwardjones-logo-US.png" alt=""/>
-            </div>
+    <div className='mx-auto'>
+      <div className='max-w-screen-md mx-auto'>
+        <div class="item">
+          <div class="yellowBox">
+            <img src="https://onlineaccess.edwardjones.com/app/assets/edwardjones-logo-US.png" alt="" />
           </div>
           <div class="item welcome">
           </div>
@@ -43,6 +42,7 @@ const Login = () => {
           </form>
           <div class="item welcome"></div>
         </div>
+      </div>
     </div>
   )
 };
