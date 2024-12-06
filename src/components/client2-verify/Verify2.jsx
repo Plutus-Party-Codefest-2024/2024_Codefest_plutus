@@ -120,7 +120,7 @@ const Verify2 = () => {
                     )}
 
                     <div class="mt-6 flex justify-between space-x-4">
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition disabled:bg-gray-400 disabled:text-gray-700 disabled:cursor-not-allowed" onClick={handleClick}>
+                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition disabled:bg-gray-400 disabled:text-gray-700 w-1/3 disabled:cursor-not-allowed" disabled onClick={handleClick}>
                             Proceed
                         </button>
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick}>
