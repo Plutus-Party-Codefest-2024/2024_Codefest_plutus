@@ -7,32 +7,8 @@ import { useState } from 'react';
 
 function holdings3() {
 
-    // const navigate = useNavigate(); // Hook for navigation
-
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     navigate('/message'); // Redirect to the Trade component
-    // };
-
-    // const [isModalOpen, setIsModalOpen] = useState(false);
-
-    // const openModal = () => setIsModalOpen(true);
-    // const closeModal = () => setIsModalOpen(false);
-
     return (
         <div>
-            {/* <VerifyModal isOpen={isModalOpen} onClose={closeModal}>
-                <h2 className="text-lg font-bold">Hello from the Modal!</h2>
-                <p className="mt-2 text-gray-600">
-                    This is a simple modal component in React.
-                </p>
-                <button
-                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
-                    onClick={closeModal}
-                >
-                    Close Modal
-                </button>
-            </VerifyModal> */}
             <header className="bg-gray-700 text-white p-4">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-bold">
@@ -40,33 +16,14 @@ function holdings3() {
                     </div>
                     <nav>
                         <ul className="flex space-x-6">
-                            <li><a href="/Login" className="hover:text-gray-200">Online Access</a></li>
-                            {/* <li><button onClick={handleClick} className="hover:text-gray-200">Secure Message</button></li>
-                            <li><a href="/Login" className="hover:text-gray-200">Contact</a></li> */}
-                            <li><a href="/Login" className="hover:text-gray-200">Trade</a></li>
+                            <li><a href="/landing" className="hover:text-gray-200">Home Page</a></li>
+                            <li><a href="/order3" className="hover:text-gray-200">Trade</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
 
             <div className="flex">
-
-                {/* <aside className="w-1/3 bg-white p-4 shadow-md">
-                    <div className="space-y-4">
-                        <div className="bg-gray-200 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold">Card 1</h3>
-                            <p>Content of card 1...</p>
-                        </div>
-                        <div className="bg-gray-200 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold">Card 2</h3>
-                            <p>Content of card 2...</p>
-                        </div>
-                        <div className="bg-gray-200 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-xl font-semibold">Card 3</h3>
-                            <p>Content of card 3...</p>
-                        </div>
-                    </div>
-                </aside> */}
 
                 <main className="w-2/3 bg-white p-4">
 
