@@ -12,7 +12,7 @@ function Order1() {
 
     const handleClick = (e) => {
       e.preventDefault();
-      navigate('/verify3'); // Redirect to the Trade component
+      navigate('/verify3'); // Redirect to the Verify component
     };
 
     return (
@@ -35,8 +35,13 @@ function Order1() {
 
                 <main className="w-2/3 bg-white p-4 mx-auto">
 
-                    <div className="mb-6">
+                    <div className="flex flex-auto mb-6">
                         <input type="text" placeholder="Search..." className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></input>
+                        <button
+                            className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                        >
+                            Search
+                        </button>
                     </div>
                     <img src={NvidiaImage} alt="Tesla Chart" />
                     <table className="min-w-full table-auto border-collapse">
@@ -65,7 +70,7 @@ function Order1() {
                                 </td>
                                 <td class="px-4 py-2">
                                     <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
-                                        Quantity
+                                        Shares
                                     </label>
                                     <div className="mt-2">
                                         <input

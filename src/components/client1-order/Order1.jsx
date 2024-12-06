@@ -12,7 +12,7 @@ function Order1() {
 
     const handleClick = (e) => {
       e.preventDefault();
-      navigate('/verify1'); // Redirect to the Trade component
+      navigate('/verify1'); // Redirect to the Verify component
     };
 
     return (
@@ -35,8 +35,13 @@ function Order1() {
 
                 <main className="w-2/3 bg-white p-4 mx-auto">
 
-                    <div className="mb-6">
+                    <div className="flex flex-auto mb-6">
                         <input type="text" placeholder="Search..." className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></input>
+                        <button
+                            className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                        >
+                            Search
+                        </button>
                     </div>
                     <img src={TeslaImage} alt="Tesla Chart" />
                     <table className="min-w-full table-auto border-collapse">
@@ -54,8 +59,8 @@ function Order1() {
                                             autoComplete="action-name"
                                             className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         >
-                                            <option>Buy</option>
                                             <option>Sell</option>
+                                            <option>Buy</option>
                                         </select>
                                         <ChevronDownIcon
                                             aria-hidden="true"
@@ -65,7 +70,7 @@ function Order1() {
                                 </td>
                                 <td class="px-4 py-2">
                                     <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
-                                        Quantity
+                                        Shares
                                     </label>
                                     <div className="mt-2">
                                         <input
@@ -89,7 +94,7 @@ function Order1() {
                                             className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         >
                                             <option>Market</option>
-                                            <option>Sell</option>
+                                            <option>Limit</option>
                                         </select>
                                         <ChevronDownIcon
                                             aria-hidden="true"
@@ -106,7 +111,6 @@ function Order1() {
                                             id="duration"
                                             name="duration"
                                             type="text"
-                                            placeholder='Day'
                                             className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         />
                                     </div>
