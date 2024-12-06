@@ -49,7 +49,7 @@ function Holdings3() {
                         </thead>
                         <tbody>
                             <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>INTC</td>
+                                <td className='px-4 py-2 text-center'>NVDA</td>
                                 <td className='px-4 py-2 text-center'>$453.87</td>
                                 <td className='px-4 py-2 text-center'>41</td>
                                 <td className='px-4 py-2 text-center'>
@@ -111,7 +111,7 @@ function Holdings3() {
                             </tr>
 
                             <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>NVDA</td>
+                                <td className='px-4 py-2 text-center'>NNDZ</td>
                                 <td className='px-4 py-2 text-center'>$165.96</td>
                                 <td className='px-4 py-2 text-center'>197</td>
                                 <td className='px-4 py-2 text-center'>
