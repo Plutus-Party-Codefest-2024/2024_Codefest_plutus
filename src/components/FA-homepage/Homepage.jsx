@@ -39,7 +39,7 @@ const Homepage = () => {
     const emails = [
         {
             title: "Sell Notification from Jenny",
-            summary: "Clienty Jenny has just placed an automatic Sell order for 50 TSLA",
+            summary: "Client Jenny has just placed an automatic Sell order for 50 TSLA",
         },
         {
             title: "WARNING - Client John has attempted to place an invalid order ",
