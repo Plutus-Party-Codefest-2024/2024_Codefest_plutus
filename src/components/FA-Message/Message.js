@@ -6,7 +6,7 @@ const Message = () => {
   const emails = [
     {
       title: "Sell Notification from Jenny",
-      summary: "Clienty Jenny has just placed an automatic Sell order for 50 {Stocks}",
+      summary: "Client Jenny has just placed an automatic Sell order for 50 {Stocks}",
     },
     {
       title: "Retirement Planning Options",
