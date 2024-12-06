@@ -39,14 +39,13 @@ const Verify2 = () => {
     const isLoading = Object.values(visibleRules).includes(false);
 
     const data = [
-        { field: 'Action Type', value: 'Sell' },
-        { field: 'Symbol', value: 'TSLA' },
-        { field: 'Shares', value: '50' },
+        { field: 'Action Type', value: 'Buy' },
+        { field: 'Symbol', value: 'TNXP' },
+        { field: 'Shares', value: '1000' },
         { field: 'Type', value: 'Market' },
-        { field: 'Current Bid/Ask', value: '368.54 / 369.83' },
-        { field: 'Estimate', value: '$18,427.00' },
+        { field: 'Current Bid/Ask', value: '0.1658 / 0.1680' },
+        { field: 'Estimate', value: '$165.80' },
     ];
-
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col items-center">
             <header className="bg-gray-700 text-white p-4 w-full">
