@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './holdings.css';
 
 
-const holdings1 = () => {
+const Holdings1 = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
@@ -50,8 +50,8 @@ const holdings1 = () => {
                         <tbody>
                             <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>TSLA</td>
-                                <td className='px-4 py-2 text-center'>$214.39</td>
-                                <td className='px-4 py-2 text-center'>413</td>
+                                <td className='px-4 py-2 text-center'>$369.49</td>
+                                <td className='px-4 py-2 text-center'>100</td>
                                 <td className='px-4 py-2 text-center'>
                                     <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleClickClient1}>Sell</button>
                                 </td>
@@ -148,4 +148,4 @@ const holdings1 = () => {
 }
 
 
-export default holdings1
+export default Holdings1

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function holdings3() {
+function Holdings3() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
 
@@ -49,38 +49,11 @@ function holdings3() {
                         </thead>
                         <tbody>
                             <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>TSLA</td>
-                                <td className='px-4 py-2 text-center'>$214.39</td>
-                                <td className='px-4 py-2 text-center'>413</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleClickClient1}>Sell</button>
-                                </td>
-                            </tr>
-
-                            <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>AMD</td>
-                                <td className='px-4 py-2 text-center'>$202.16</td>
-                                <td className='px-4 py-2 text-center'>500</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
-                                </td>
-                            </tr>
-
-                            <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>AAPL</td>
-                                <td className='px-4 py-2 text-center'>$207.04</td>
-                                <td className='px-4 py-2 text-center'>288</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
-                                </td>
-                            </tr>
-
-                            <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>INTC</td>
                                 <td className='px-4 py-2 text-center'>$453.87</td>
                                 <td className='px-4 py-2 text-center'>41</td>
                                 <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleClickClient1}>Sell</button>
                                 </td>
                             </tr>
 
@@ -110,6 +83,32 @@ function holdings3() {
                                     <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
+                            <tr className='border-b'>
+                                <td className='px-4 py-2 text-center'>TSLA</td>
+                                <td className='px-4 py-2 text-center'>$214.39</td>
+                                <td className='px-4 py-2 text-center'>413</td>
+                                <td className='px-4 py-2 text-center'>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                </td>
+                            </tr>
+
+                            <tr className='border-b'>
+                                <td className='px-4 py-2 text-center'>AMD</td>
+                                <td className='px-4 py-2 text-center'>$202.16</td>
+                                <td className='px-4 py-2 text-center'>500</td>
+                                <td className='px-4 py-2 text-center'>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                </td>
+                            </tr>
+
+                            <tr className='border-b'>
+                                <td className='px-4 py-2 text-center'>AAPL</td>
+                                <td className='px-4 py-2 text-center'>$207.04</td>
+                                <td className='px-4 py-2 text-center'>288</td>
+                                <td className='px-4 py-2 text-center'>
+                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
+                                </td>
+                            </tr>
 
                             <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>NVDA</td>
@@ -128,16 +127,6 @@ function holdings3() {
                                     <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
                                 </td>
                             </tr>
-
-                            <tr className='border-b'>
-                                <td className='px-4 py-2 text-center'>NVDA</td>
-                                <td className='px-4 py-2 text-center'>$164.99</td>
-                                <td className='px-4 py-2 text-center'>68</td>
-                                <td className='px-4 py-2 text-center'>
-                                    <button className='text-white px-4 py-2 rounded bg-green-500'>Buy</button>  <button className='bg-blue-500 text-white px-4 py-2 rounded'>Sell</button>
-                                </td>
-                            </tr>
-
                         </tbody>
                     </table>
                 </main>
@@ -148,4 +137,4 @@ function holdings3() {
 }
 
 
-export default holdings3
+export default Holdings3
