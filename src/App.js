@@ -14,6 +14,7 @@ import Verify2 from './components/client2-verify/Verify2';
 import Verify3 from './components/client3-verify/Verify3';
 import Inprocess1 from './components/client1-inprocess-orders/inprocess1';
 import Inprocess3 from './components/client3-inprocess-orders/inprocess3';
+import FAVerify3 from './components/FA-client3-verify/FAVerify3';
 
 const App = () => (
   <Router>
@@ -31,6 +32,7 @@ const App = () => (
       <Route path="/verify3" element={<Verify3 />} />
       <Route path="/inprocess1" element={<Inprocess1 />} />
       <Route path="/inprocess3" element={<Inprocess3 />} />
+      <Route path="/faverify3" element={<FAVerify3 />} />
     </Routes>
   </Router>
 );
