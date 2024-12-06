@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function holdings1() {
+function Holdings1() {
 
     const navigate = useNavigate(); // Hook for navigation
 
@@ -149,4 +149,4 @@ function holdings1() {
 }
 
 
-export default holdings1
+export default Holdings1
