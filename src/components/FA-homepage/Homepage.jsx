@@ -1,5 +1,6 @@
 import './Homepage.css'
 // import React, { useState, useEffect }  from 'react';
+import React, { useState }  from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { FaPlusSquare, FaBell, FaCog, FaPhoneAlt, FaClipboardList, FaEnvelope, FaBullhorn, FaRegStar, FaChartLine, FaGlobe } from 'react-icons/fa';
 import { FaMountainCity } from 'react-icons/fa6';
@@ -8,6 +9,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import { IoMdPeople, IoIosPaper } from "react-icons/io";
 import { ImStack } from "react-icons/im";
 import { GrDocument } from "react-icons/gr";
+import Modal from '../Modal'
 
 
 
@@ -20,8 +22,25 @@ const Homepage = () => {
     //     navigate('/holdings1');
     // };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <div>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <h2 className="text-lg font-bold">Hello from the Modal!</h2>
+                <p className="mt-2 text-gray-600">
+                    This is a simple modal component in React.
+                </p>
+                <button
+                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
+                    onClick={closeModal}
+                >
+                    Close Modal
+                </button>
+            </Modal>
             <header className="bg-white flex items-center p-4 w-full">
                 <div className="flex-shrink-0">
                     <div className="bg-yellow-500 p-4">
