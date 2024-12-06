@@ -44,7 +44,7 @@ const Inprocess1 = () => {
                             <tr className='border-b'>
                                 <td className='px-4 py-2 text-center'>TSLA</td>
                                 <td className='px-4 py-2 text-center'>$369.49</td>
-                                <td className='px-4 py-2 text-center'>100</td>
+                                <td className='px-4 py-2 text-center'>50</td>
                                 <td className='px-4 py-2 text-center'>Sell Order Pending</td>
                             </tr>
 

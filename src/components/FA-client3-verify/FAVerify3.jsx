@@ -86,7 +86,7 @@ const FAVerify3 = () => {
                     <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/high-velocity-sales/get-to-know-the-console-and-cadences/images/a1d4a8972e35806d435b7a05edba7910_kix.maunvh87ew35.png" width="40px" alt='Logo' />
                 </div>
             </header>
-            <nav className="border-t border-gray-300 p-4 flex items-center space-x-4">
+            <nav className="border-t border-gray-300 p-4 flex items-center justify-end space-x-4">
                 <CgMenuGridO className="text-gray-500" size={40} />
                 <h3>Salesforce Desktop</h3>
                 <div className="w-[200px] bg-blue-200 border-t-4 border-blue-500 p-4">Home</div>
