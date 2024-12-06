@@ -1,6 +1,6 @@
 import React from 'react';
-import './Order1.css'
-import TeslaImage from '../../assets/tesla-chart.jpg';
+import './Order2.css'
+import TonixImage from '../../assets/tonix-chart.jpg';
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { useNavigate } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function Order1() {
 
     const handleClick = (e) => {
       e.preventDefault();
-      navigate('/verify1'); // Redirect to the Trade component
+      navigate('/verify2'); // Redirect to the Trade component
     };
 
     return (
@@ -20,12 +20,12 @@ function Order1() {
             <header className='bg-gray-700 text-white p-4'>
                 <div className='flex items-center justify-between'>
                     <div className='text-xl font-bold'>
-                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Jenny Holdings
+                        <img src='https://exitmap.com/wp-content/uploads/2022/03/Edward-Jones-logo.png' alt='Logo' class='h-8 inline-block mr-3' /> Online Access - Client Chad Holdings
                     </div>
                     <nav>
                         <ul className='flex space-x-6'>
                             <li><a href='/' className='hover:text-gray-200'>Home Page</a></li>
-                            <li><a href='/order1' className='hover:text-gray-200'>Trade</a></li>
+                            <li><a href='/order2' className='hover:text-gray-200'>Trade</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +38,7 @@ function Order1() {
                     <div className="mb-6">
                         <input type="text" placeholder="Search..." className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></input>
                     </div>
-                    <img src={TeslaImage} alt="Tesla Chart" />
+                    <img src={TonixImage} alt="Tesla Chart" />
                     <table className="min-w-full table-auto border-collapse">
 
                         <tbody>
