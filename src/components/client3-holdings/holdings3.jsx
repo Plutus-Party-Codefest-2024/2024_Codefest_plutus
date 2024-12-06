@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function holdings3() {
+function Holdings3() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
 
@@ -137,4 +137,4 @@ function holdings3() {
 }
 
 
-export default holdings3
+export default Holdings3

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './holdings.css';
 
 
-const holdings1 = () => {
+const Holdings1 = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const navigate = useNavigate(); // Hook for navigation
@@ -148,4 +148,4 @@ const holdings1 = () => {
 }
 
 
-export default holdings1
+export default Holdings1

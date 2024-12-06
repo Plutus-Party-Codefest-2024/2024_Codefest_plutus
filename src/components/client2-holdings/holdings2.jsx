@@ -5,7 +5,7 @@ import './holdings.css';
 
 
 
-function holdings2() {
+function Holdings2() {
 
     return (
         <div>
@@ -140,4 +140,4 @@ function holdings2() {
 }
 
 
-export default holdings2
+export default Holdings2
