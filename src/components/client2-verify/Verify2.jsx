@@ -47,7 +47,7 @@ const Verify2 = () => {
                     </div>
                     <nav>
                         <ul className="flex space-x-6">
-                            <li><a href="/landing" className="hover:text-gray-200">Home Page</a></li>
+                            <li><a href="/" className="hover:text-gray-200">Home Page</a></li>
                             <li><a href="/order2" className="hover:text-gray-200">Trade</a></li>
                         </ul>
                     </nav>
