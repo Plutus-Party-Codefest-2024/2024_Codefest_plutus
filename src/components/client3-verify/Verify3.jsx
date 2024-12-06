@@ -86,7 +86,7 @@ const Verify3 = () => {
                         {visibleRules.rule4 && (
                             <div id="rule4" className="flex items-center justify-between border-b pb-2">
                                 <span className="text-gray-700">Product Review</span>
-                                <span className="text-yellow-500 font-semibold">⚠ Pending</span>
+                                <span className="text-yellow-500 font-semibold">⚠ Requires FA Approval</span>
                             </div>
                         )}
                         {visibleRules.rule5 && (
@@ -132,9 +132,9 @@ const Verify3 = () => {
                         <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick1}>
                             Cancel
                         </button>
-                        <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick2}>
+                        {/* <button class="bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition w-1/3" onClick={handleClick2}>
                             Contact FA
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
