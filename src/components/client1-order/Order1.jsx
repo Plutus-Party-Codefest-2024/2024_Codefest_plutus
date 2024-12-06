@@ -1,17 +1,19 @@
 import React from 'react';
 import './Order1.css'
-// import { useNavigate } from 'react-router-dom';
+import TeslaImage from '../../assets/tesla-chart.jpg';
+import { ChevronDownIcon } from '@heroicons/react/16/solid'
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Order1() {
 
-    // const navigate = useNavigate(); // Hook for navigation
+    const navigate = useNavigate(); // Hook for navigation
 
-    // const handleClick = (e) => {
-    //   e.preventDefault();
-    //   navigate('/message'); // Redirect to the Trade component
-    // };
+    const handleClick = (e) => {
+      e.preventDefault();
+      navigate('/verify1'); // Redirect to the Trade component
+    };
 
     return (
         <div>
@@ -38,31 +40,96 @@ function Order1() {
                     <div className="mb-6">
                         <input type="text" placeholder="Search..." className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></input>
                     </div>
-
+                    <img src={TeslaImage} alt="Tesla Chart" />
                     <table className="min-w-full table-auto border-collapse">
-                        <thead class="bg-zinc-100 text-black">
-                            <tr>
-                                <th class="px-4 py-2">ID</th>
-                                <th class="px-4 py-2">Asset</th>
-                                <th class="px-4 py-2">Price</th>
-                                <th class="px-4 py-2">Quantity</th>
-                                <th class="px-4 py-2">Action</th>
-                            </tr>
-                        </thead>
+
                         <tbody>
                             <tr class="border-b">
-                                <td class="px-4 py-2">1</td>
-                                <td class="px-4 py-2">Stock A</td>
-                                <td class="px-4 py-2">$100</td>
-                                <td class="px-4 py-2">50</td>
-                                <td class="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td class="px-4 py-2">
+                                    <label htmlFor="action" className="block text-sm/6 font-medium text-gray-900">
+                                        Action
+                                    </label>
+                                    <div className="mt-2 grid grid-cols-1">
+                                        <select
+                                            id="action"
+                                            name="action"
+                                            autoComplete="action-name"
+                                            className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        >
+                                            <option>Buy</option>
+                                            <option>Sell</option>
+                                        </select>
+                                        <ChevronDownIcon
+                                            aria-hidden="true"
+                                            className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                                        />
+                                    </div>
+                                </td>
+                                <td class="px-4 py-2">
+                                    <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
+                                        Quantity
+                                    </label>
+                                    <div className="mt-2">
+                                        <input
+                                            id="quantity"
+                                            name="quantity"
+                                            type="text"
+                                            className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        />
+                                    </div>
+                                </td>
                             </tr>
                             <tr class="border-b">
-                                <td class="px-4 py-2">2</td>
-                                <td class="px-4 py-2">Stock B</td>
-                                <td class="px-4 py-2">$150</td>
-                                <td class="px-4 py-2">30</td>
-                                <td class="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td class="px-4 py-2">
+                                    <label htmlFor="action" className="block text-sm/6 font-medium text-gray-900">
+                                        Order Type
+                                    </label>
+                                    <div className="mt-2 grid grid-cols-1">
+                                        <select
+                                            id="order-type"
+                                            name="order-type"
+                                            className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        >
+                                            <option>Market</option>
+                                            <option>Sell</option>
+                                        </select>
+                                        <ChevronDownIcon
+                                            aria-hidden="true"
+                                            className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                                        />
+                                    </div>
+                                </td>
+                                <td class="px-4 py-2">
+                                    <label htmlFor="duration" className="block text-sm/6 font-medium text-gray-900">
+                                        Duration
+                                    </label>
+                                    <div className="mt-2">
+                                        <input
+                                            id="duration"
+                                            name="duration"
+                                            type="text"
+                                            placeholder='Day'
+                                            className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td className='text-right'>
+                                    <button type="button" className="text-sm/6 font-semibold text-gray-900 px-4 py-4">
+                                        Cancel
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        onClick={handleClick}
+                                        className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    >
+                                        Submit
+                                    </button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
