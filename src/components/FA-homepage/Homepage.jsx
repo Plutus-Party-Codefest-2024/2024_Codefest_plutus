@@ -123,13 +123,13 @@ const Homepage = () => {
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className="text-lg font-bold">InvestSafe Alert!</h2>
                 <p className="mt-2 text-gray-600">
-                    Your client Brad has a pending order that requires your attention!
+                    Client has submitted an abnormally large order that requires your attention!
                 </p>
                 <button
                     className="ml-6 mt-4 bg-red-500 text-white px-4 py-2 rounded mx-4"
                     onClick={closeModal}
                 >
-                    Close Modal
+                    Close
                 </button>
                 <button
                     className="ml-8 mt-4 bg-red-500 text-white px-4 py-2 rounded"
