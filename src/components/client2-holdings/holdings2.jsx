@@ -90,35 +90,35 @@ function holdings2() {
                                 <td className="px-4 py-2">Stock A</td>
                                 <td className="px-4 py-2">$100</td>
                                 <td className="px-4 py-2">100</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">2</td>
                                 <td className="px-4 py-2">Stock B</td>
                                 <td className="px-4 py-2">$150</td>
                                 <td className="px-4 py-2">30</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">3</td>
                                 <td className="px-4 py-2">Stock C</td>
                                 <td className="px-4 py-2">$200</td>
                                 <td className="px-4 py-2">300</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">4</td>
                                 <td className="px-4 py-2">Stock D</td>
                                 <td className="px-4 py-2">$300</td>
                                 <td className="px-4 py-2">25</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                             <tr className="border-b">
                                 <td className="px-4 py-2">5</td>
                                 <td className="px-4 py-2">Stock E</td>
                                 <td className="px-4 py-2">$500</td>
                                 <td className="px-4 py-2">15</td>
-                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Trade</button></td>
+                                <td className="px-4 py-2"><button className="bg-blue-500 text-white px-4 py-2 rounded">Buy</button>  <button className="bg-blue-500 text-white px-4 py-2 rounded">Sell</button></td>
                             </tr>
                         </tbody>
                     </table>
