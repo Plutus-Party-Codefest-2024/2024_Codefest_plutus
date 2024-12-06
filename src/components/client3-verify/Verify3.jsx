@@ -12,10 +12,10 @@ const Verify3 = () => {
         navigate('/holdings3');
     };
 
-    const handleClick2 = (e) => {
-        e.preventDefault();
-        navigate('/inprocess3');
-    };
+    // const handleClick2 = (e) => {
+    //     e.preventDefault();
+    //     navigate('/inprocess3');
+    // };
 
     // State to track which rules are visible
     const [visibleRules, setVisibleRules] = useState({
